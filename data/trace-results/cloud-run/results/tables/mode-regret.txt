@@ -1,0 +1,4 @@
+% Regret of the governor's mode choice vs oracle under H/B misestimation (worst of four perturbations per cell).
+% 10 Mbps: mean=0.0000 worst=0.0000 fraction_cells_with_regret=0.000
+% 100 Mbps: mean=0.0680 worst=1.9052 fraction_cells_with_regret=0.036
+% 1000 Mbps: mean=0.1438 worst=1.7632 fraction_cells_with_regret=0.143

@@ -1,0 +1,81 @@
+{
+ "topology": "ogbn-arxiv",
+ "vertices": 169343,
+ "edges": 1157799,
+ "workers": 8,
+ "T_pre_s": 24.9,
+ "fallbacks": 0,
+ "replication_factor": 1.834,
+ "per_worker_budget_records": 5291,
+ "ledger": [
+  {
+   "category": "Graph replica (vertices)",
+   "bytes": 579216,
+   "MB": 0.6,
+   "note": "72402 vertices \u00d7 8 B"
+  },
+  {
+   "category": "Graph replica (edges)",
+   "bytes": 6393288,
+   "MB": 6.4,
+   "note": "799161 unique undirected edges \u00d7 8 B"
+  },
+  {
+   "category": "Feature cache",
+   "bytes": 2708992,
+   "MB": 2.7,
+   "note": "5291 vertices \u00d7 128 dims \u00d7 4 B"
+  },
+  {
+   "category": "Data subtotal",
+   "bytes": 9681496,
+   "MB": 9.7,
+   "note": ""
+  },
+  {
+   "category": "Training state (model+optimizer)",
+   "bytes": 113269531,
+   "MB": 113.3,
+   "note": "Linear(128,256) + Adam \u2248 113 MB"
+  },
+  {
+   "category": "Sampler state (buffers)",
+   "bytes": 10000000,
+   "MB": 10.0,
+   "note": "frontier + indices + temp arrays \u2248 10 MB"
+  },
+  {
+   "category": "Communication buffer",
+   "bytes": 5000000,
+   "MB": 5.0,
+   "note": "prefetch queue + RPC framing \u2248 5 MB"
+  },
+  {
+   "category": "Framework overhead",
+   "bytes": 150000000,
+   "MB": 150.0,
+   "note": "PyTorch runtime + allocator \u2248 150 MB"
+  },
+  {
+   "category": "Safety headroom",
+   "bytes": 200000000,
+   "MB": 200.0,
+   "note": "allocator fragmentation + peak variance \u2248 200 MB"
+  },
+  {
+   "category": "Total estimated",
+   "bytes": 487951027,
+   "MB": 488.0,
+   "note": "vs RLIMIT_AS = 6000 MB; utilization = 8%"
+  }
+ ],
+ "budget_derivation": {
+  "formula": "budget = V / (4N)",
+  "V": 169343,
+  "N": 8,
+  "budget": 5291,
+  "budget_MB": 2.7,
+  "total_data_capacity_MB": 2500,
+  "note": "2-3 GB data capacity per Pi after OS+framework; V/(4N) is the largest round budget fitting this envelope"
+ }
+}

@@ -1,0 +1,23 @@
+% Heterogeneous B_i: straggler at 10 Mbps vs fleet at 100/500/1000.
+% cells where straggler mode differs from fleet mode: 9/21
+% web-google 12k @fast=100: slow=H fast=H
+% web-google 12k @fast=500: slow=H fast=H
+% web-google 12k @fast=1000: slow=H fast=H
+% amazon0601 12k @fast=100: slow=H fast=H
+% amazon0601 12k @fast=500: slow=H fast=H
+% amazon0601 12k @fast=1000: slow=H fast=H
+% wiki-talk 12k @fast=100: slow=H fast=H
+% wiki-talk 12k @fast=500: slow=H fast=S  <-- split
+% wiki-talk 12k @fast=1000: slow=H fast=S  <-- split
+% ogbn-arxiv @fast=100: slow=H fast=H
+% ogbn-arxiv @fast=500: slow=H fast=S  <-- split
+% ogbn-arxiv @fast=1000: slow=H fast=S  <-- split
+% amazon0601 full @fast=100: slow=H fast=H
+% amazon0601 full @fast=500: slow=H fast=H
+% amazon0601 full @fast=1000: slow=H fast=H
+% web-google full @fast=100: slow=H fast=H
+% web-google full @fast=500: slow=H fast=S  <-- split
+% web-google full @fast=1000: slow=H fast=S  <-- split
+% wiki-talk full @fast=100: slow=H fast=S  <-- split
+% wiki-talk full @fast=500: slow=H fast=S  <-- split
+% wiki-talk full @fast=1000: slow=H fast=S  <-- split

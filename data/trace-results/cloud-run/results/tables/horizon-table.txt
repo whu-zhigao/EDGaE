@@ -1,0 +1,24 @@
+% AUTO-GENERATED: total data-path amortized time per mode.
+% time_m(H) = T_pre,m + D_m/B + H * C_m/B   (seconds)
+% Crossing analysis: first horizon where each mode wins.
+% web-google 12k @10Mbps: H1=E H10=E H50=E H100=E H500=E
+% web-google 12k @100Mbps: H1=S H10=E H50=E H100=E H500=E
+% web-google 12k @1000Mbps: H1=S H10=E H50=E H100=E H500=E
+% amazon0601 12k @10Mbps: H1=E H10=E H50=E H100=E H500=E
+% amazon0601 12k @100Mbps: H1=E H10=E H50=E H100=E H500=E
+% amazon0601 12k @1000Mbps: H1=S H10=E H50=E H100=E H500=E
+% wiki-talk 12k @10Mbps: H1=S H10=E H50=E H100=E H500=E
+% wiki-talk 12k @100Mbps: H1=S H10=S H50=E H100=E H500=E
+% wiki-talk 12k @1000Mbps: H1=S H10=S H50=S H100=S H500=E
+% ogbn-arxiv @10Mbps: H1=S H10=E H50=E H100=E H500=E
+% ogbn-arxiv @100Mbps: H1=S H10=S H50=E H100=E H500=E
+% ogbn-arxiv @1000Mbps: H1=S H10=S H50=S H100=S H500=E
+% amazon0601 full @10Mbps: H1=S H10=E H50=E H100=E H500=E
+% amazon0601 full @100Mbps: H1=S H10=E H50=E H100=E H500=E
+% amazon0601 full @1000Mbps: H1=S H10=S H50=E H100=E H500=E
+% web-google full @10Mbps: H1=S H10=E H50=E H100=E H500=E
+% web-google full @100Mbps: H1=S H10=S H50=E H100=E H500=E
+% web-google full @1000Mbps: H1=S H10=S H50=S H100=S H500=E
+% wiki-talk full @10Mbps: H1=S H10=S H50=E H100=E H500=E
+% wiki-talk full @100Mbps: H1=S H10=S H50=S H100=S H500=E
+% wiki-talk full @1000Mbps: H1=S H10=S H50=S H100=S H500=S
