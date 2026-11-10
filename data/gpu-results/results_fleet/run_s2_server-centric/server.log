@@ -1,0 +1,145 @@
+/root/edgae/gpu_experiments/edgae_fleet/fleet_server.py:137: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  gs.append(torch.from_numpy(
+  [fleet] epoch   1 val 0.0771
+  [fleet] epoch   2 val 0.0771
+  [fleet] epoch   3 val 0.0771
+  [fleet] epoch   4 val 0.0933
+  [fleet] epoch   5 val 0.2778
+  [fleet] epoch   6 val 0.2935
+  [fleet] epoch   7 val 0.2678
+  [fleet] epoch   8 val 0.2522
+  [fleet] epoch   9 val 0.2402
+  [fleet] epoch  10 val 0.2456
+  [fleet] epoch  11 val 0.2664
+  [fleet] epoch  12 val 0.2896
+  [fleet] epoch  13 val 0.3137
+  [fleet] epoch  14 val 0.3298
+  [fleet] epoch  15 val 0.3435
+  [fleet] epoch  16 val 0.3579
+  [fleet] epoch  17 val 0.3628
+  [fleet] epoch  18 val 0.3779
+  [fleet] epoch  19 val 0.4026
+  [fleet] epoch  20 val 0.4255
+  [fleet] epoch  21 val 0.4287
+  [fleet] epoch  22 val 0.4250
+  [fleet] epoch  23 val 0.4204
+  [fleet] epoch  24 val 0.4226
+  [fleet] epoch  25 val 0.4324
+  [fleet] epoch  26 val 0.4448
+  [fleet] epoch  27 val 0.4568
+  [fleet] epoch  28 val 0.4602
+  [fleet] epoch  29 val 0.4529
+  [fleet] epoch  30 val 0.4485
+  [fleet] epoch  31 val 0.4500
+  [fleet] epoch  32 val 0.4490
+  [fleet] epoch  33 val 0.4609
+  [fleet] epoch  34 val 0.4724
+  [fleet] epoch  35 val 0.4773
+  [fleet] epoch  36 val 0.4871
+  [fleet] epoch  37 val 0.4907
+  [fleet] epoch  38 val 0.4863
+  [fleet] epoch  39 val 0.4854
+  [fleet] epoch  40 val 0.4834
+  [fleet] epoch  41 val 0.4822
+  [fleet] epoch  42 val 0.4778
+  [fleet] epoch  43 val 0.4846
+  [fleet] epoch  44 val 0.4883
+  [fleet] epoch  45 val 0.4951
+  [fleet] epoch  46 val 0.4932
+  [fleet] epoch  47 val 0.4958
+  [fleet] epoch  48 val 0.5024
+  [fleet] epoch  49 val 0.5017
+  [fleet] epoch  50 val 0.5056
+  [fleet] epoch  51 val 0.5010
+  [fleet] epoch  52 val 0.5000
+  [fleet] epoch  53 val 0.5046
+  [fleet] epoch  54 val 0.5081
+  [fleet] epoch  55 val 0.5076
+  [fleet] epoch  56 val 0.5061
+  [fleet] epoch  57 val 0.5090
+  [fleet] epoch  58 val 0.5083
+  [fleet] epoch  59 val 0.5056
+  [fleet] epoch  60 val 0.5051
+{
+ "best_val": 0.509033203125,
+ "test_acc": 0.516357421875,
+ "ttt_epoch": 36,
+ "ttt_train_s": 1224.566834475845,
+ "train_s": 2057.63387240842,
+ "bytes_feature_total": 0,
+ "bytes_sbatch_total": 8161645080,
+ "worker_stats": {
+  "2": {
+   "op": "bye",
+   "worker": 2,
+   "data_s": 701.398770801723,
+   "compute_s": 5.647081144154072,
+   "batches": 300,
+   "h_seeds": 0,
+   "s_seeds": 285540
+  },
+  "3": {
+   "op": "bye",
+   "worker": 3,
+   "data_s": 629.9704252369702,
+   "compute_s": 9.429301586002111,
+   "batches": 300,
+   "h_seeds": 0,
+   "s_seeds": 285540
+  },
+  "4": {
+   "op": "bye",
+   "worker": 4,
+   "data_s": 688.1743527390063,
+   "compute_s": 5.8541310131549835,
+   "batches": 300,
+   "h_seeds": 0,
+   "s_seeds": 285540
+  },
+  "7": {
+   "op": "bye",
+   "worker": 7,
+   "data_s": 700.6128298938274,
+   "compute_s": 3.954343281686306,
+   "batches": 300,
+   "h_seeds": 0,
+   "s_seeds": 285420
+  },
+  "0": {
+   "op": "bye",
+   "worker": 0,
+   "data_s": 255.28652120754123,
+   "compute_s": 4.093755275011063,
+   "batches": 120,
+   "h_seeds": 0,
+   "s_seeds": 84540
+  },
+  "1": {
+   "op": "bye",
+   "worker": 1,
+   "data_s": 1964.5250112339854,
+   "compute_s": 45.73801617696881,
+   "batches": 3840,
+   "h_seeds": 0,
+   "s_seeds": 3906300
+  },
+  "5": {
+   "op": "bye",
+   "worker": 5,
+   "data_s": 662.5304554849863,
+   "compute_s": 3.7727113403379917,
+   "batches": 300,
+   "h_seeds": 0,
+   "s_seeds": 285360
+  },
+  "6": {
+   "op": "bye",
+   "worker": 6,
+   "data_s": 109.20997974276543,
+   "compute_s": 0.558536484837532,
+   "batches": 60,
+   "h_seeds": 0,
+   "s_seeds": 38220
+  }
+ }
+}

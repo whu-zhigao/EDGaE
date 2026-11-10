@@ -1,0 +1,26 @@
+{
+ "run_dir": "/root/edgae/gpu_experiments/edgae_fleet/results_fleet/run_s3_hybrid",
+ "mode": "hybrid",
+ "run_seed": 3,
+ "workers": 8,
+ "fanout": 2,
+ "hidden": 256,
+ "classes": 40,
+ "feature_dim": 128,
+ "batch_size": 1024,
+ "lr": 0.01,
+ "weight_decay": 0.0005,
+ "epochs": 60,
+ "eval_seeds": 4096,
+ "target_mbps": 100.0,
+ "host": "127.0.0.1",
+ "port": 7790,
+ "cores": [
+  22,
+  23
+ ],
+ "as_limit_gb": 6.0,
+ "worker_id": 3,
+ "server_host": "127.0.0.1",
+ "server_port": 7790
+}
