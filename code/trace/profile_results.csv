@@ -1,0 +1,7 @@
+dataset,sampling,workers,feature_MB_per_epoch,compute_s_per_epoch,transfer_s_per_epoch,total_s_per_epoch,feature_load_pct,computation_pct
+amazon0601,non-uniform,8,400.2,6.07,3.41,9.48,35.9,64.1
+amazon0601,uniform,8,467.7,6.63,3.98,10.61,37.5,62.5
+web-google,non-uniform,8,760.3,33.43,6.47,39.9,16.2,83.8
+web-google,uniform,8,897.1,12.24,7.63,19.87,38.4,61.6
+ogbn-arxiv,non-uniform,8,147.1,3.14,1.25,4.39,28.5,71.5
+ogbn-arxiv,uniform,8,170.5,3.29,1.45,4.75,30.6,69.4

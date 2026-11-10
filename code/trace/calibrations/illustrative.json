@@ -1,0 +1,15 @@
+{
+  "partition_edge_rate_edges_per_s": 1000000,
+  "partition_score_rate_vertices_per_s": 250000,
+  "sample_rate_features_per_s": 120000,
+  "feature_extract_rate_bytes_per_s": 200000000,
+  "cache_build_rate_bytes_per_s": 150000000,
+  "ship_rate_bytes_per_s": 80000000,
+  "compute_s_per_accessed_feature": 0.0001,
+  "sync_fixed_s": 0.01,
+  "worker_power_w": 6.0,
+  "server_power_w": 30.0,
+  "switch_power_w": 5.0,
+  "calibration_source": "illustrative-not-publishable",
+  "publishable": false
+}
