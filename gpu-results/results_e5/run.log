@@ -1,0 +1,55 @@
+{
+ "torch": "2.7.0+cu128",
+ "cuda_available": true,
+ "device": "cuda",
+ "python": "3.12.3",
+ "experiment": "E5_mode_transition",
+ "measurement_utc": "2026-11-04T02:24:33.087690+00:00",
+ "gpu": "NVIDIA A800 80GB PCIe"
+}
+== loading ogbn-arxiv ==
+{
+ "vertices": 169343,
+ "feature_dim": 128,
+ "num_classes": 40,
+ "unique_undirected_edges": 1157799,
+ "train": 90941,
+ "valid": 29799,
+ "test": 48603,
+ "load_seconds": 0.04
+}
+
+===== seed 1 =====
+placement: fallbacks=0 repl=1.834 T_pre=12.3s
+  [E5] bw=10 mode=server    4.555 s/epoch    5.67 MB/epoch (    1.24 MB/s)
+  [E5] bw=10 mode=edgae     1.174 s/epoch    1.45 MB/epoch (    1.23 MB/s)
+  [E5] bw=100 mode=server    0.459 s/epoch    5.67 MB/epoch (   12.34 MB/s)
+  [E5] bw=100 mode=edgae     0.124 s/epoch    1.45 MB/epoch (   11.73 MB/s)
+  [E5] bw=1000 mode=server    0.119 s/epoch    5.67 MB/epoch (   47.43 MB/s)
+  [E5] bw=1000 mode=edgae     0.069 s/epoch    1.45 MB/epoch (   21.02 MB/s)
+  [E5] bw=native mode=server    0.027 s/epoch    5.67 MB/epoch (  207.30 MB/s)
+  [E5] bw=native mode=edgae     0.033 s/epoch    1.45 MB/epoch (   43.97 MB/s)
+
+===== seed 2 =====
+placement: fallbacks=0 repl=1.834 T_pre=12.0s
+  [E5] bw=10 mode=server    4.581 s/epoch    5.72 MB/epoch (    1.25 MB/s)
+  [E5] bw=10 mode=edgae     1.187 s/epoch    1.47 MB/epoch (    1.24 MB/s)
+  [E5] bw=100 mode=server    0.464 s/epoch    5.72 MB/epoch (   12.32 MB/s)
+  [E5] bw=100 mode=edgae     0.130 s/epoch    1.47 MB/epoch (   11.33 MB/s)
+  [E5] bw=1000 mode=server    0.126 s/epoch    5.72 MB/epoch (   45.53 MB/s)
+  [E5] bw=1000 mode=edgae     0.069 s/epoch    1.47 MB/epoch (   21.32 MB/s)
+  [E5] bw=native mode=server    0.002 s/epoch    5.72 MB/epoch ( 2850.16 MB/s)
+  [E5] bw=native mode=edgae     0.034 s/epoch    1.47 MB/epoch (   43.85 MB/s)
+
+===== seed 3 =====
+placement: fallbacks=0 repl=1.834 T_pre=12.2s
+  [E5] bw=10 mode=server    4.545 s/epoch    5.67 MB/epoch (    1.25 MB/s)
+  [E5] bw=10 mode=edgae     1.171 s/epoch    1.45 MB/epoch (    1.24 MB/s)
+  [E5] bw=100 mode=server    0.463 s/epoch    5.67 MB/epoch (   12.25 MB/s)
+  [E5] bw=100 mode=edgae     0.130 s/epoch    1.45 MB/epoch (   11.14 MB/s)
+  [E5] bw=1000 mode=server    0.112 s/epoch    5.67 MB/epoch (   50.42 MB/s)
+  [E5] bw=1000 mode=edgae     0.067 s/epoch    1.45 MB/epoch (   21.67 MB/s)
+  [E5] bw=native mode=server    0.002 s/epoch    5.67 MB/epoch ( 2393.28 MB/s)
+  [E5] bw=native mode=edgae     0.033 s/epoch    1.45 MB/epoch (   44.43 MB/s)
+
+wrote results_e5/mode_transition.csv (24 rows) and results_e5/mode_transition_summary.csv (12 rows)
