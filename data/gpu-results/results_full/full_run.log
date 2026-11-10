@@ -1,0 +1,282 @@
+== environment ==
+{
+ "torch": "2.7.0+cu128",
+ "cuda_available": true,
+ "cuda_version": "12.8",
+ "device": "cuda",
+ "python": "3.12.3",
+ "machine": "x86_64",
+ "gpu": "NVIDIA A800 80GB PCIe",
+ "gpu_mem_gb": 85.1
+}
+== loading ogbn-arxiv (first run parses ~80 MB gz) ==
+{
+ "vertices": 169343,
+ "feature_dim": 128,
+ "num_classes": 40,
+ "unique_undirected_edges": 1157799,
+ "train": 90941,
+ "valid": 29799,
+ "test": 48603,
+ "load_seconds": 0.05
+}
+
+===== seed 1 =====
+  [gcn] epoch   1 loss 3.6722 val 0.0763 test 0.0586 (311 ms)
+  [gcn] epoch   5 loss 3.1129 val 0.3028 test 0.2713 (29 ms)
+  [gcn] epoch  10 loss 2.7931 val 0.3080 test 0.2829 (29 ms)
+  [gcn] epoch  15 loss 2.4256 val 0.3944 test 0.3595 (29 ms)
+  [gcn] epoch  20 loss 2.0823 val 0.4893 test 0.4739 (29 ms)
+  [gcn] epoch  25 loss 1.8231 val 0.5426 test 0.5341 (29 ms)
+  [gcn] epoch  30 loss 1.6397 val 0.5729 test 0.5629 (29 ms)
+  [gcn] epoch  35 loss 1.5074 val 0.6032 test 0.5967 (29 ms)
+  [gcn] epoch  40 loss 1.4082 val 0.6222 test 0.6137 (29 ms)
+  [gcn] epoch  45 loss 1.3377 val 0.6357 test 0.6279 (29 ms)
+  [gcn] epoch  50 loss 1.2909 val 0.6449 test 0.6372 (29 ms)
+  [gcn] epoch  55 loss 1.2556 val 0.6531 test 0.6458 (29 ms)
+  [gcn] epoch  60 loss 1.2332 val 0.6588 test 0.6546 (29 ms)
+  [gcn] epoch  65 loss 1.2126 val 0.6619 test 0.6591 (29 ms)
+  [gcn] epoch  70 loss 1.1984 val 0.6676 test 0.6671 (29 ms)
+  [gcn] epoch  75 loss 1.1851 val 0.6689 test 0.6677 (29 ms)
+  [gcn] epoch  80 loss 1.1760 val 0.6702 test 0.6674 (29 ms)
+  [gcn] epoch  85 loss 1.1669 val 0.6711 test 0.6637 (29 ms)
+  [gcn] epoch  90 loss 1.1582 val 0.6735 test 0.6694 (29 ms)
+  [gcn] epoch  95 loss 1.1529 val 0.6771 test 0.6736 (29 ms)
+  [gcn] epoch 100 loss 1.1458 val 0.6777 test 0.6719 (29 ms)
+  [gcn] epoch 105 loss 1.1418 val 0.6771 test 0.6708 (29 ms)
+  [gcn] epoch 110 loss 1.1379 val 0.6766 test 0.6683 (29 ms)
+  [gcn] epoch 115 loss 1.1349 val 0.6776 test 0.6679 (29 ms)
+  [gcn] epoch 120 loss 1.1370 val 0.6794 test 0.6758 (29 ms)
+  [gcn] epoch 125 loss 1.1319 val 0.6803 test 0.6770 (29 ms)
+  [gcn] epoch 130 loss 1.1284 val 0.6804 test 0.6758 (29 ms)
+  [gcn] epoch 135 loss 1.1258 val 0.6801 test 0.6734 (29 ms)
+  [gcn] epoch 140 loss 1.1233 val 0.6804 test 0.6735 (29 ms)
+  [gcn] epoch 145 loss 1.1216 val 0.6803 test 0.6735 (29 ms)
+  [gcn] epoch 150 loss 1.1203 val 0.6786 test 0.6670 (30 ms)
+  [gcn] epoch 155 loss 1.1316 val 0.6812 test 0.6798 (29 ms)
+  [gcn] epoch 160 loss 1.1200 val 0.6813 test 0.6728 (29 ms)
+  [gcn] epoch 165 loss 1.1170 val 0.6802 test 0.6676 (29 ms)
+  [gcn] epoch 170 loss 1.1155 val 0.6835 test 0.6774 (29 ms)
+  [gcn] epoch 175 loss 1.1134 val 0.6825 test 0.6795 (29 ms)
+  [gcn] epoch 180 loss 1.1127 val 0.6819 test 0.6764 (29 ms)
+  [gcn] epoch 185 loss 1.1127 val 0.6791 test 0.6665 (29 ms)
+  [gcn] epoch 190 loss 1.1157 val 0.6841 test 0.6787 (29 ms)
+  [gcn] epoch 195 loss 1.1109 val 0.6829 test 0.6778 (29 ms)
+  [gcn] epoch 200 loss 1.1086 val 0.6816 test 0.6742 (29 ms)
+placement: fallbacks=61818 repl=4.489 imb=4.727 T_pre=206.3s
+  [server] epoch   1 loss 1.7909 val 0.5137 test 0.4966
+  [server] epoch   5 loss 1.7673 val 0.5469 test 0.5225
+  [server] epoch  10 loss 1.6651 val 0.5483 test 0.5237
+  [server] epoch  15 loss 1.7541 val 0.5427 test 0.5396
+  [server] epoch  20 loss 1.6587 val 0.5393 test 0.5125
+  [server] epoch  25 loss 1.6490 val 0.5378 test 0.5247
+  [server] epoch  30 loss 1.6122 val 0.5430 test 0.5303
+  [server] epoch  35 loss 1.6687 val 0.5520 test 0.5596
+  [server] epoch  40 loss 1.5993 val 0.5400 test 0.5273
+  [server] epoch  45 loss 1.6443 val 0.5464 test 0.5308
+  [server] epoch  50 loss 1.6765 val 0.5435 test 0.5459
+  [server] epoch  55 loss 1.6524 val 0.5486 test 0.5449
+  [server] epoch  60 loss 1.6826 val 0.5527 test 0.5344
+  [edgae] epoch   1 loss 1.7909 val 0.5137 test 0.4966
+  [edgae] epoch   5 loss 1.7673 val 0.5469 test 0.5225
+  [edgae] epoch  10 loss 1.6651 val 0.5483 test 0.5237
+  [edgae] epoch  15 loss 1.7541 val 0.5427 test 0.5396
+  [edgae] epoch  20 loss 1.6587 val 0.5393 test 0.5125
+  [edgae] epoch  25 loss 1.6490 val 0.5378 test 0.5247
+  [edgae] epoch  30 loss 1.6122 val 0.5430 test 0.5303
+  [edgae] epoch  35 loss 1.6687 val 0.5520 test 0.5596
+  [edgae] epoch  40 loss 1.5993 val 0.5400 test 0.5273
+  [edgae] epoch  45 loss 1.6443 val 0.5464 test 0.5308
+  [edgae] epoch  50 loss 1.6765 val 0.5435 test 0.5459
+  [edgae] epoch  55 loss 1.6524 val 0.5486 test 0.5449
+  [edgae] epoch  60 loss 1.6826 val 0.5527 test 0.5344
+P4 parity |val_server - val_edgae| = 0.000000
+data-path speedup (server/edgae) = 0.98x; miss bytes 5,893,844,480
+  [edgae] epoch   1 loss 1.5515 val 0.5876 test 0.5842
+  [edgae] epoch   5 loss 1.4326 val 0.6191 test 0.6016
+  [edgae] epoch  10 loss 1.4312 val 0.5996 test 0.5786
+  [edgae] epoch  15 loss 1.4606 val 0.6021 test 0.6060
+  [edgae] epoch  20 loss 1.4433 val 0.6094 test 0.5947
+  [edgae] epoch  25 loss 1.4152 val 0.6189 test 0.5999
+  [edgae] epoch  30 loss 1.3523 val 0.6057 test 0.6016
+  [edgae] epoch   1 loss 1.4711 val 0.6262 test 0.6099
+  [edgae] epoch   5 loss 1.3243 val 0.6467 test 0.6379
+  [edgae] epoch  10 loss 1.3469 val 0.6377 test 0.6206
+  [edgae] epoch  15 loss 1.3533 val 0.6470 test 0.6406
+  [edgae] epoch  20 loss 1.3333 val 0.6370 test 0.6316
+  [edgae] epoch  25 loss 1.2815 val 0.6501 test 0.6416
+  [edgae] epoch  30 loss 1.2079 val 0.6421 test 0.6306
+
+===== seed 2 =====
+  [gcn] epoch   1 loss 3.6900 val 0.0763 test 0.0586 (20 ms)
+  [gcn] epoch   5 loss 3.1212 val 0.3013 test 0.2703 (29 ms)
+  [gcn] epoch  10 loss 2.8246 val 0.3605 test 0.3728 (29 ms)
+  [gcn] epoch  15 loss 2.4568 val 0.3889 test 0.3569 (29 ms)
+  [gcn] epoch  20 loss 2.1119 val 0.4822 test 0.4657 (29 ms)
+  [gcn] epoch  25 loss 1.8527 val 0.5360 test 0.5285 (29 ms)
+  [gcn] epoch  30 loss 1.6660 val 0.5658 test 0.5546 (29 ms)
+  [gcn] epoch  35 loss 1.5272 val 0.6012 test 0.5935 (29 ms)
+  [gcn] epoch  40 loss 1.4221 val 0.6230 test 0.6164 (29 ms)
+  [gcn] epoch  45 loss 1.3477 val 0.6353 test 0.6290 (29 ms)
+  [gcn] epoch  50 loss 1.2954 val 0.6446 test 0.6397 (29 ms)
+  [gcn] epoch  55 loss 1.2564 val 0.6537 test 0.6482 (29 ms)
+  [gcn] epoch  60 loss 1.2264 val 0.6591 test 0.6544 (29 ms)
+  [gcn] epoch  65 loss 1.2065 val 0.6653 test 0.6633 (29 ms)
+  [gcn] epoch  70 loss 1.1906 val 0.6632 test 0.6535 (29 ms)
+  [gcn] epoch  75 loss 1.1800 val 0.6700 test 0.6642 (29 ms)
+  [gcn] epoch  80 loss 1.1696 val 0.6695 test 0.6607 (29 ms)
+  [gcn] epoch  85 loss 1.1627 val 0.6708 test 0.6599 (29 ms)
+  [gcn] epoch  90 loss 1.1575 val 0.6757 test 0.6698 (29 ms)
+  [gcn] epoch  95 loss 1.1507 val 0.6763 test 0.6716 (29 ms)
+  [gcn] epoch 100 loss 1.1445 val 0.6756 test 0.6709 (29 ms)
+  [gcn] epoch 105 loss 1.1396 val 0.6766 test 0.6683 (29 ms)
+  [gcn] epoch 110 loss 1.1396 val 0.6793 test 0.6786 (29 ms)
+  [gcn] epoch 115 loss 1.1335 val 0.6792 test 0.6783 (29 ms)
+  [gcn] epoch 120 loss 1.1323 val 0.6795 test 0.6771 (29 ms)
+  [gcn] epoch 125 loss 1.1289 val 0.6802 test 0.6743 (29 ms)
+  [gcn] epoch 130 loss 1.1258 val 0.6792 test 0.6722 (29 ms)
+  [gcn] epoch 135 loss 1.1236 val 0.6796 test 0.6711 (29 ms)
+  [gcn] epoch 140 loss 1.1225 val 0.6811 test 0.6765 (29 ms)
+  [gcn] epoch 145 loss 1.1259 val 0.6802 test 0.6686 (29 ms)
+  [gcn] epoch 150 loss 1.1189 val 0.6808 test 0.6772 (29 ms)
+  [gcn] epoch 155 loss 1.1197 val 0.6817 test 0.6773 (29 ms)
+  [gcn] epoch 160 loss 1.1153 val 0.6802 test 0.6725 (29 ms)
+  [gcn] epoch 165 loss 1.1151 val 0.6809 test 0.6738 (29 ms)
+  [gcn] epoch 170 loss 1.1130 val 0.6833 test 0.6773 (29 ms)
+  [gcn] epoch 175 loss 1.1118 val 0.6836 test 0.6803 (29 ms)
+  [gcn] epoch 180 loss 1.1200 val 0.6712 test 0.6519 (29 ms)
+  [gcn] epoch 185 loss 1.1141 val 0.6743 test 0.6581 (29 ms)
+  [gcn] epoch 190 loss 1.1139 val 0.6811 test 0.6688 (29 ms)
+  [gcn] epoch 195 loss 1.1082 val 0.6835 test 0.6781 (29 ms)
+  [gcn] epoch 200 loss 1.1093 val 0.6837 test 0.6777 (29 ms)
+placement: fallbacks=61818 repl=4.489 imb=4.727 T_pre=200.1s
+  [server] epoch   1 loss 1.8741 val 0.5229 test 0.5100
+  [server] epoch   5 loss 1.6567 val 0.5466 test 0.5393
+  [server] epoch  10 loss 1.7184 val 0.5449 test 0.5320
+  [server] epoch  15 loss 1.5965 val 0.5569 test 0.5435
+  [server] epoch  20 loss 1.7038 val 0.5476 test 0.5183
+  [server] epoch  25 loss 1.6618 val 0.5325 test 0.5273
+  [server] epoch  30 loss 1.6630 val 0.5522 test 0.5383
+  [server] epoch  35 loss 1.6924 val 0.5559 test 0.5469
+  [server] epoch  40 loss 1.5991 val 0.5505 test 0.5349
+  [server] epoch  45 loss 1.7387 val 0.5496 test 0.5361
+  [server] epoch  50 loss 1.6746 val 0.5317 test 0.5120
+  [server] epoch  55 loss 1.5929 val 0.5400 test 0.5181
+  [server] epoch  60 loss 1.6849 val 0.5261 test 0.5078
+  [edgae] epoch   1 loss 1.8741 val 0.5229 test 0.5100
+  [edgae] epoch   5 loss 1.6567 val 0.5466 test 0.5393
+  [edgae] epoch  10 loss 1.7184 val 0.5449 test 0.5320
+  [edgae] epoch  15 loss 1.5965 val 0.5569 test 0.5435
+  [edgae] epoch  20 loss 1.7038 val 0.5476 test 0.5183
+  [edgae] epoch  25 loss 1.6618 val 0.5325 test 0.5273
+  [edgae] epoch  30 loss 1.6630 val 0.5522 test 0.5383
+  [edgae] epoch  35 loss 1.6924 val 0.5559 test 0.5469
+  [edgae] epoch  40 loss 1.5991 val 0.5505 test 0.5349
+  [edgae] epoch  45 loss 1.7387 val 0.5496 test 0.5361
+  [edgae] epoch  50 loss 1.6746 val 0.5317 test 0.5120
+  [edgae] epoch  55 loss 1.5929 val 0.5400 test 0.5181
+  [edgae] epoch  60 loss 1.6849 val 0.5261 test 0.5078
+P4 parity |val_server - val_edgae| = 0.000000
+data-path speedup (server/edgae) = 0.98x; miss bytes 5,913,932,288
+  [edgae] epoch   1 loss 1.5928 val 0.5742 test 0.5696
+  [edgae] epoch   5 loss 1.4428 val 0.6155 test 0.6013
+  [edgae] epoch  10 loss 1.4235 val 0.6106 test 0.5908
+  [edgae] epoch  15 loss 1.3126 val 0.6143 test 0.6008
+  [edgae] epoch  20 loss 1.4559 val 0.6052 test 0.5869
+  [edgae] epoch  25 loss 1.4021 val 0.6155 test 0.5886
+  [edgae] epoch  30 loss 1.4138 val 0.6128 test 0.6079
+  [edgae] epoch   1 loss 1.4588 val 0.6067 test 0.5977
+  [edgae] epoch   5 loss 1.3408 val 0.6423 test 0.6279
+  [edgae] epoch  10 loss 1.3136 val 0.6448 test 0.6311
+  [edgae] epoch  15 loss 1.2221 val 0.6401 test 0.6401
+  [edgae] epoch  20 loss 1.3428 val 0.6384 test 0.6226
+  [edgae] epoch  25 loss 1.3004 val 0.6421 test 0.6392
+  [edgae] epoch  30 loss 1.2914 val 0.6494 test 0.6343
+
+===== seed 3 =====
+  [gcn] epoch   1 loss 3.6898 val 0.0763 test 0.0586 (20 ms)
+  [gcn] epoch   5 loss 3.1316 val 0.2101 test 0.1850 (29 ms)
+  [gcn] epoch  10 loss 2.8392 val 0.2860 test 0.2598 (29 ms)
+  [gcn] epoch  15 loss 2.4790 val 0.4158 test 0.3919 (29 ms)
+  [gcn] epoch  20 loss 2.1354 val 0.4688 test 0.4466 (29 ms)
+  [gcn] epoch  25 loss 1.8753 val 0.5177 test 0.5055 (29 ms)
+  [gcn] epoch  30 loss 1.6890 val 0.5630 test 0.5530 (29 ms)
+  [gcn] epoch  35 loss 1.5480 val 0.6012 test 0.5964 (29 ms)
+  [gcn] epoch  40 loss 1.4394 val 0.6192 test 0.6122 (29 ms)
+  [gcn] epoch  45 loss 1.3596 val 0.6280 test 0.6165 (29 ms)
+  [gcn] epoch  50 loss 1.3043 val 0.6391 test 0.6289 (29 ms)
+  [gcn] epoch  55 loss 1.2655 val 0.6536 test 0.6508 (29 ms)
+  [gcn] epoch  60 loss 1.2385 val 0.6597 test 0.6549 (29 ms)
+  [gcn] epoch  65 loss 1.2166 val 0.6611 test 0.6545 (29 ms)
+  [gcn] epoch  70 loss 1.2010 val 0.6667 test 0.6635 (29 ms)
+  [gcn] epoch  75 loss 1.1892 val 0.6688 test 0.6654 (29 ms)
+  [gcn] epoch  80 loss 1.1766 val 0.6729 test 0.6703 (29 ms)
+  [gcn] epoch  85 loss 1.1678 val 0.6743 test 0.6688 (29 ms)
+  [gcn] epoch  90 loss 1.1596 val 0.6696 test 0.6617 (29 ms)
+  [gcn] epoch  95 loss 1.1523 val 0.6739 test 0.6661 (29 ms)
+  [gcn] epoch 100 loss 1.1465 val 0.6738 test 0.6620 (29 ms)
+  [gcn] epoch 105 loss 1.1454 val 0.6755 test 0.6685 (29 ms)
+  [gcn] epoch 110 loss 1.1406 val 0.6759 test 0.6647 (29 ms)
+  [gcn] epoch 115 loss 1.1367 val 0.6783 test 0.6710 (29 ms)
+  [gcn] epoch 120 loss 1.1335 val 0.6783 test 0.6726 (29 ms)
+  [gcn] epoch 125 loss 1.1305 val 0.6793 test 0.6722 (29 ms)
+  [gcn] epoch 130 loss 1.1279 val 0.6785 test 0.6707 (29 ms)
+  [gcn] epoch 135 loss 1.1257 val 0.6794 test 0.6710 (29 ms)
+  [gcn] epoch 140 loss 1.1242 val 0.6822 test 0.6751 (29 ms)
+  [gcn] epoch 145 loss 1.1259 val 0.6810 test 0.6761 (29 ms)
+  [gcn] epoch 150 loss 1.1246 val 0.6789 test 0.6657 (29 ms)
+  [gcn] epoch 155 loss 1.1225 val 0.6831 test 0.6724 (29 ms)
+  [gcn] epoch 160 loss 1.1177 val 0.6804 test 0.6737 (29 ms)
+  [gcn] epoch 165 loss 1.1176 val 0.6812 test 0.6767 (29 ms)
+  [gcn] epoch 170 loss 1.1154 val 0.6824 test 0.6774 (29 ms)
+  [gcn] epoch 175 loss 1.1147 val 0.6825 test 0.6770 (29 ms)
+  [gcn] epoch 180 loss 1.1132 val 0.6823 test 0.6765 (29 ms)
+  [gcn] epoch 185 loss 1.1123 val 0.6827 test 0.6763 (29 ms)
+  [gcn] epoch 190 loss 1.1115 val 0.6812 test 0.6721 (29 ms)
+  [gcn] epoch 195 loss 1.1146 val 0.6831 test 0.6810 (29 ms)
+  [gcn] epoch 200 loss 1.1100 val 0.6846 test 0.6817 (29 ms)
+placement: fallbacks=61818 repl=4.489 imb=4.727 T_pre=203.6s
+  [server] epoch   1 loss 1.7200 val 0.5159 test 0.5100
+  [server] epoch   5 loss 1.6684 val 0.5427 test 0.5251
+  [server] epoch  10 loss 1.6640 val 0.5349 test 0.5020
+  [server] epoch  15 loss 1.6214 val 0.5476 test 0.5400
+  [server] epoch  20 loss 1.6570 val 0.5457 test 0.5444
+  [server] epoch  25 loss 1.6376 val 0.5535 test 0.5332
+  [server] epoch  30 loss 1.6256 val 0.5442 test 0.5417
+  [server] epoch  35 loss 1.7706 val 0.5498 test 0.5488
+  [server] epoch  40 loss 1.7323 val 0.5437 test 0.5361
+  [server] epoch  45 loss 1.6430 val 0.5405 test 0.5212
+  [server] epoch  50 loss 1.7169 val 0.5608 test 0.5291
+  [server] epoch  55 loss 1.6703 val 0.5417 test 0.5420
+  [server] epoch  60 loss 1.6104 val 0.5354 test 0.5378
+  [edgae] epoch   1 loss 1.7200 val 0.5159 test 0.5100
+  [edgae] epoch   5 loss 1.6684 val 0.5427 test 0.5251
+  [edgae] epoch  10 loss 1.6640 val 0.5349 test 0.5020
+  [edgae] epoch  15 loss 1.6214 val 0.5476 test 0.5400
+  [edgae] epoch  20 loss 1.6570 val 0.5457 test 0.5444
+  [edgae] epoch  25 loss 1.6376 val 0.5535 test 0.5332
+  [edgae] epoch  30 loss 1.6256 val 0.5442 test 0.5417
+  [edgae] epoch  35 loss 1.7706 val 0.5498 test 0.5488
+  [edgae] epoch  40 loss 1.7323 val 0.5437 test 0.5361
+  [edgae] epoch  45 loss 1.6430 val 0.5405 test 0.5212
+  [edgae] epoch  50 loss 1.7169 val 0.5608 test 0.5291
+  [edgae] epoch  55 loss 1.6703 val 0.5417 test 0.5420
+  [edgae] epoch  60 loss 1.6104 val 0.5354 test 0.5378
+P4 parity |val_server - val_edgae| = 0.000000
+data-path speedup (server/edgae) = 0.98x; miss bytes 5,894,404,096
+  [edgae] epoch   1 loss 1.5227 val 0.5903 test 0.5840
+  [edgae] epoch   5 loss 1.4163 val 0.6091 test 0.5964
+  [edgae] epoch  10 loss 1.3612 val 0.5967 test 0.5894
+  [edgae] epoch  15 loss 1.4020 val 0.6201 test 0.6118
+  [edgae] epoch  20 loss 1.4158 val 0.6133 test 0.6072
+  [edgae] epoch  25 loss 1.3333 val 0.6062 test 0.5957
+  [edgae] epoch  30 loss 1.3585 val 0.6121 test 0.5981
+  [edgae] epoch   1 loss 1.4007 val 0.6216 test 0.6094
+  [edgae] epoch   5 loss 1.3019 val 0.6323 test 0.6091
+  [edgae] epoch  10 loss 1.2651 val 0.6345 test 0.6145
+  [edgae] epoch  15 loss 1.2851 val 0.6418 test 0.6321
+  [edgae] epoch  20 loss 1.2929 val 0.6484 test 0.6421
+  [edgae] epoch  25 loss 1.2855 val 0.6411 test 0.6255
+  [edgae] epoch  30 loss 1.2169 val 0.6470 test 0.6406
+
+wrote results_full/gpu_native_results.csv (15 rows)
